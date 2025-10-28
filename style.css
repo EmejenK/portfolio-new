@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: aliceblue;
+    font-family: "poppins";
+}
+.header-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+.header-section h2 {
+    cursor: pointer;
+    margin-left: 25px;
+}
+.header-section ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 2.5rem;
+    padding-top: 10px;
+}
+.header-section ul li {
+    list-style: none;
+    padding-left: 1.5rem;
+}
+.header-section ul li a {
+    text-decoration: none;
+    font-size: 16px;
+}
+.header-section h2:hover {
+    color: aqua;
+    transition: 0.5s ease-in;
+}
+.header-section ul li a:hover {
+    color: aqua;
+    transition: 0.5s ease-in;
+}
+
+/*************Home section****************/
+.home-section {
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.me {
+    justify-content: space-between;
+    gap: 15px;
+}
+.me h3 {
+    padding-top:  1rem;
+    font-size: 15px;
+    margin-left: 10px;
+}
+.me h2 {
+    padding-top: 1rem;
+    font-size: 26px;
+    font-family: lucida sans;
+}
+.me h4 {
+    padding-top: 1rem;
+    font-family: lucida sans;
+}
+.me h4 span {
+    display: inline-block;
+    position: relative;
+    color: transparent;
+    font-family: courier new;
+    font-size: 23px;
+    letter-spacing: 2px;
+    -webkit-text-stroke: 0.7px aqua;
+    animation: display-text 16s linear infinite; /*creating animation property*/
+    animation-delay: calc(-4s * var(--i));
+}
+@keyframes display-text {
+    25%,
+    100% {
+        display: none;
+    }
+}
+.me h4 span::before {
+    content: attr(data-text);
+    position: absolute;
+    width: 0;
+    border-right: 2px solid aqua;
+    color: aqua;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: fill-text 4s linear infinite;
+}
+
+@keyframes fill-text {
+    10%,
+    100% {
+        width: 0;
+    }
+    70%,
+    90% {
+        width: 100%;
+    }
+}
+.me p {
+    padding-top: 1.7rem;
+    font-family: cursive;
+}
+.socials {
+    margin-top: 2rem;
+    
+}
+.socials a {
+    text-decoration: none;
+    padding-right: 2rem;
+}
+.socials a i {
+    font-size: 19px;
+    color: aqua;
+    border: 1px solid aqua;
+    padding: 6px;
+    border-radius: 50%;
+    transition: 1s;
+}
+.socials a i:hover {
+    background: aqua;
+    color: black;
+     box-shadow: 0px 0px 5px 5px rgba(78, 242, 248, 0.3);
+}
+span li {
+    list-style: none;
+    margin-top: 2.3rem;
+    border-radius: 7px;
+    
+}
+span li a {
+    border: 0px solid whitesmoke;
+    padding: 10px;
+    justify-content: space-around;
+    border-radius: 10px;
+    background-color: aqua;
+    color: black;
+    box-shadow: 0px 0px 5px 5px rgba(26, 242, 250, 0.3);
+    transition: 0.5s;
+}
+span li a:hover {
+    background: transparent;
+    color: aqua;
+}
+.my-image {
+    border: 0px solid white;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 10px rgba(26, 242, 250, 0.3);
+    margin-top: 1.5rem;
+}
+.my-image:hover {
+    transform: translateY(-3px);
+    transition: 0.3s ease-in-out;
+}
+.my-image img {
+    width: 250px;
+    height: 290px;
+    border-radius: 50%;
+    cursor: pointer;
+    mix-blend-mode: lighten;
+}
