@@ -13,7 +13,10 @@
 }
 .header-section h2 {
     cursor: pointer;
-    margin-left: 25px;
+    margin-left: 5rem;
+    color: aqua;
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .header-section ul {
     display: flex;
@@ -24,11 +27,12 @@
 }
 .header-section ul li {
     list-style: none;
-    padding-left: 1.5rem;
+    padding-left: 2rem;
+    margin-right: 1rem;
 }
 .header-section ul li a {
     text-decoration: none;
-    font-size: 16px;
+    font-size: 20px;
 }
 .header-section h2:hover {
     color: aqua;
@@ -37,18 +41,19 @@
 .header-section ul li a:hover {
     color: aqua;
     transition: 0.5s ease-in;
+    text-decoration: underline;
 }
 
 /*************Home section****************/
 .home-section {
-    margin-top: 3rem;
+    margin-top: 5rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 .me {
     justify-content: space-between;
-    gap: 15px;
+    margin-left: 2rem;
 }
 .me h3 {
     padding-top:  1rem;
@@ -158,9 +163,103 @@ span li a:hover {
     transition: 0.3s ease-in-out;
 }
 .my-image img {
-    width: 250px;
-    height: 290px;
+    width: 290px;
+    height: 295px;
     border-radius: 50%;
     cursor: pointer;
     mix-blend-mode: lighten;
+}
+
+/*******About Me*******/
+.about {
+    margin-top: 6rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 3.5rem; 
+    margin-right: 3.5rem;
+    border: px solid aqua;
+    padding: 1rem;
+    box-shadow: 0px 0px 10px 10px rgba(26, 242, 250, 0.3);
+}
+.about-image {
+    margin-top: 0.5rem;
+    border: 1px solid aqua;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.about-image img {
+    width: 270px;
+    height: 270px;
+    border-radius: 15px;
+    filter: brightness(60%);
+}
+.explain {
+    margin-top: 0.5rem;
+}
+.explain h2 {
+    padding: 1rem;
+    text-align: center;
+    color: aqua;
+    text-shadow: 9px  9px 10px rgba(92, 240, 227, 0.3);
+
+}
+.explain pre {
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: 100;
+}
+
+/******My Services**********/
+.my-services {
+    margin-top: 9rem;
+    
+}
+.my-services h1 {
+    text-align: center;
+    color: aqua;
+    padding: 5px;
+}
+.my-services hr {
+    background-color: aqua;
+    margin-left: 35%;
+    margin-right: 35%;
+    height: 1px;
+}
+.my-services hr:hover {
+    width: 50px;
+    transition: 0.4s;
+}
+.service-container {
+    display: flex;
+    justify-content: space-around;
+}
+.services {
+    border: 0px solid whitesmoke;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    width: 200px;
+    height: 250px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 10px rgba(201, 202, 202, 0.3);
+}
+.services i {
+    padding: 10px;
+    margin-top:  20px;
+    border: 0px solid white;
+    border-radius: 50%;
+    font-size: 16px;
+    background-color: rgba(26, 242, 250, 0.3);
+}
+.services h2 {
+    padding-top: 2rem;
+    font-size: 19px;
+}
+.services p {
+    padding-top: 2rem;
+    font-size: 12px;
+    font-family: arial;
+    font-weight: 100;
 }
