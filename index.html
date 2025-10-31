@@ -12,21 +12,21 @@
     <header class="header-section">
         <h2>E*3MJN</h2>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about-me">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </header>
     <!------------Home section------------>
-    <section class="home-section">
+    <section class="home-section" id="home">
         <div class="me">
             <h3>Hello, It's Me</h3>
             <h2>Emejen Katii</h2>
             <h4>And I'm a 
                 <span style="--i:4;" data-text ="Web Developer">Web Developer</span>
-                <span style="--i:3;" data-text ="Youtuber">Youtuber</span>
+                <span style="--i:3;" data-text ="Frontend Dev">Frontend Dev</span>
                 <span style="--i:2;" data-text ="Bloger">Bloger</span>
                 <span style="--i:1;" data-text ="Designer">Designer</span>
             </h4>
@@ -36,8 +36,9 @@
                 <a href="#"><i class='bx bxl-linkedin-square'></i></a>
                 <a href="#"><i class='bx bxl-tiktok' ></i></a>
                 <a href="#"><i class='bx bxl-instagram'></i></i></a>
-            <span>
+            <span class="buttons">
                 <li><a href="#">Download CV</a></li>
+                <li><a href="https://mail.google.com/mail/u/0/#inbox?compose=new" class="hire">Hire Me</a></li>
             </span>
             </div>
         </div>
@@ -45,8 +46,10 @@
             <img src="images/black.png" alt="">
         </div>
     </section>
+    
     <!--------About me---------->
-    <section id="about-me" class="about">
+    <section id="about-me">
+        <div class="about">
         <div class="about-image">
             <img src="images/about.jpg" alt="">
         </div>
@@ -60,14 +63,15 @@ maintainable server-side applications. Strong problem-solving <br>
 ability, team collaboration experience, and an eye <br>
 for translating business requirements into technical solutions.</p>
         </div>
+        </div>
     </section>
     <!--------My Services--------->
-    <section class="my-services">
+    <section class="my-services" id="services">
         <h1>My Services</h1>
         <hr>
         <div class="service-container">
         <div class="services">
-            <i class='bx bx-code-block'></i>
+            <i class='bx bxl-visual-studio'></i>
             <h2>Web Development</h2>
             <p>Custom Website development using modern technology like 
             React.js, Vue.js and responsive framework to 
@@ -76,7 +80,7 @@ for translating business requirements into technical solutions.</p>
         </div>
 
         <div class="services">
-            <i class='bx bx-code-block'></i>
+            <i class='bx bx-code-alt'></i>
             <h2>Responsive Design</h2>
             <p>Creating websites that work perfectly on all devices 
                 and screen sizes ensuring optimal user experience 
@@ -84,8 +88,9 @@ for translating business requirements into technical solutions.</p>
 
         </div>
 
+
         <div class="services">
-            <i class='bx bx-code-block'></i>
+            <i class='bx bx-code-curly'></i>
             <h2>UI/UX Design</h2>
             <p>Designing intuitive user interfaces with focus 
                 on user experience, accessibility and modern
@@ -93,71 +98,123 @@ for translating business requirements into technical solutions.</p>
             </p>
 
         </div>
+
+        <div class="services">
+            <i class='bx bxs-rocket'></i>
+            <h2>Performance Optimization</h2>
+            <p>Optimizing website performance through code splitting,
+            lazy loading and other techniques to ensure fast loading.</p>
+
+        </div>
         </div>
     </section>
     <!-----------MY SKILLS-------------->
-    <section class="skills-container">
-        <h1>My Skills</h1>
-        <div class="skills-wrap">
-            <div class="technical">
-                <h3>Technical Skills</h3>
-                <!------>
-                    <h4>HTML</h4>
-                    <div class="progress-bar">
-                        <div class="html"><span>96%</span></div>
-                    </div>
+    <section class="main-skill" id="skills">
+        <div class="skills-container">
+            <h1>My Skills</h1>
+            <div class="skills-wrap">
+                <div class="technical">
+                    <h3>Technical Skills</h3>
                     <!------>
-                    <h4>CSS</h4>
-                    <div class="progress-bar">
-                        <div class="css"><span>90%</span></div>
-                    </div>
-                    <!------>
-                    <h4>JavaScript</h4>
-                    <div class="progress-bar">
-                        <div class="javascript"><span>65%</span></div>
-                    </div>
-                    <!------>
-                    <h4>Bootstrap</h4>
-                    <div class="progress-bar">
-                        <div class="bootstrap"><span>76%</span></div>
-                    </div>
-                    <!------>
-                    <h4>Laravel</h4>
-                    <div class="progress-bar">
-                        <div class="laravel"><span>60%</span></div>
-                    </div>
-            </div>
+                        <h4>HTML</h4>
+                        <div class="progress-bar">
+                            <div class="html"><span>96%</span></div>
+                        </div>
+                        <!------>
+                        <h4>CSS</h4>
+                        <div class="progress-bar">
+                            <div class="css"><span>90%</span></div>
+                        </div>
+                        <!------>
+                        <h4>JavaScript</h4>
+                        <div class="progress-bar">
+                            <div class="javascript"><span>65%</span></div>
+                        </div>
+                        <!------>
+                        <h4>Bootstrap</h4>
+                        <div class="progress-bar">
+                            <div class="bootstrap"><span>76%</span></div>
+                        </div>
+                        <!------>
+                        <h4>Laravel</h4>
+                        <div class="progress-bar">
+                            <div class="laravel"><span>60%</span></div>
+                        </div>
+                </div>
 
-            <div class="spinning-circle">
-                <h3>Professional Skills</h3>
-                <div class="spinning-main">
-                <div class="container-progress">
-                    <!----1st circle progress bar---->
-                    <div class="progress" style="--i:85;--clr:#43f94a;">
-                        <h3>85<span>%</span></h3>
-                        <h4>Creativity</h4>
-                    </div>
-                    <!----2nd circle progress bar---->
-                    <div class="progress" style="--i:62;--clr:#43d4f9;">
-                        <h3>62<span>%</span></h3>
-                        <h4>Communication</h4>
-                    </div>
-                    <!----3rd circle progress bar---->
-                    <div class="progress less" style="--i:35;--clr:#d4d10e;">
-                        <h3>75<span>%</span></h3>
-                        <h4>Prblm-Slvg</h4>
-                    </div>
-                    <!----4th circle progress bar---->
-                    <div class="progress" style="--i:78;--clr:#f123be;">
-                        <h3>78<span>%</span></h3>
-                        <h4>Team Work</h4>
-                    </div>
-                </div>
-                </div>
+                <div class="spinning-circle">
+                    <h3>Professional Skills</h3>
                 
+                    <div class="container-progress">
+                        <div class="allow">
+                        <!----1st circle progress bar---->
+                        <div class="progress" style="--i:85;--clr:#43f94a;">
+                            <h3>85<span>%</span></h3>
+                            <h4>Creativity</h4>
+                        </div>
+                        <!----2nd circle progress bar---->
+                        <div class="progress" style="--i:62;--clr:#43d4f9;">
+                            <h3>62<span>%</span></h3>
+                            <h4>Communication</h4>
+                        </div>
+                        </div>
+                        <div class="allow2">
+                        <!----3rd circle progress bar---->
+                        <div class="progress less" style="--i:35;--clr:#d4d10e;">
+                            <h3>75<span>%</span></h3>
+                            <h4>Prblm-Slvg</h4>
+                        </div>
+                        <!----4th circle progress bar---->
+                        <div class="progress" style="--i:78;--clr:#f123be;">
+                            <h3>78<span>%</span></h3>
+                            <h4>Team Work</h4>
+                        </div>
+                        </div>
+                    </div>
+                
+                    
+
+                </div>
 
             </div>
-
+        </div>   
+        <!-----My Projects-------->
+        <div class="main-pro">
+            <h2>My Projects</h2>
+            <div class="projects-wrapper">
+                <!---Project 1----->
+                    <div class="image-wrap">
+                            <img src="images/dropin.png" alt="">
+                            <div class="content">
+                                <h3>E-commerce Website</h3>
+                                <p>I have made the best out of it</p>
+                            </div>
+                    </div>
+                    <!---Project 2----->
+                    <div class="image-wrap">
+                            <img src="images/traveller..png" alt="">
+                            <div class="content">
+                                <h3>Booking Webiste</h3>
+                                <p>I have made the best out of it</p>
+                            </div>
+                    </div>
+                    <!---Project 3----->
+                    <div class="image-wrap">
+                            <img src="images/admin..png" alt="">
+                            <div class="content">
+                                <h3>Admin Dashboard</h3>
+                                <p>I have made the best out of it</p>
+                            </div>
+                    </div>
+                    <!---Project 4----->
+                    <div class="image-wrap">
+                            <img src="images/wifi.png" alt="">
+                            <div class="content">
+                                <h3>Internet of Things</h3>
+                                <p>I have made the best out of it</p>
+                            </div>
+                    </div>
+            </div>
         </div>
     </section>
 </body>
