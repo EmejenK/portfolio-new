@@ -172,7 +172,7 @@ span li a:hover {
     border: 0px solid white;
     border-radius: 50%;
     box-shadow: 0px 0px 10px 10px rgba(26, 242, 250, 0.3);
-    margin-top: 1.5rem;
+    margin-top: 3rem;
 }
 .my-image:hover {
     transform: translateY(-5px);
@@ -231,7 +231,6 @@ span li a:hover {
 /******My Services**********/
 .my-services {
     margin-top: 9rem;
-    
 }
 .my-services h1 {
     text-align: center;
@@ -253,7 +252,8 @@ span li a:hover {
     flex-wrap: wrap;
     margin-left: 3rem;
     margin-right: 3rem;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 35px;
 }
 .services {
     border: 0px solid whitesmoke;
