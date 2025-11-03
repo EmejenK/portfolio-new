@@ -640,6 +640,7 @@ footer {
 }
 footer h2 {
     padding-top: 10px;
+    color: aqua;
 }
 footer ul {
     display: flex;
