@@ -91,12 +91,17 @@
     animation: display-text 16s linear infinite; /*creating animation property*/
     animation-delay: calc(-4s * var(--i));
 }
-@media screen and (max-width: 250px) and (min-width: 100px) {
+@media screen and (max-width: 300px) and (min-width: 100px) {
     .me h4 span {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: clip;
-    
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    max-width: 250px;    /* adjust as needed */
+    font-size: 18px;     /* reduce font-size */
 }
 }
 @keyframes display-text {
