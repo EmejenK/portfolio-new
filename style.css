@@ -85,9 +85,9 @@
     position: relative;
     color: transparent;
     font-family: courier new;
-    font-size: 23px;
-    letter-spacing: 2px;
-    -webkit-text-stroke: 0.7px aqua;
+    font-size: 17px;
+    letter-spacing: 1px;
+    -webkit-text-stroke: 0.5px rgb(68, 231, 243);
     animation: display-text 16s linear infinite; /*creating animation property*/
     animation-delay: calc(-4s * var(--i));
 }
@@ -97,8 +97,6 @@
     overflow: hidden;
     text-overflow: clip;
     display: inline-block;
-    white-space: nowrap;
-    overflow: hidden;
     width: 100%;
     max-width: 250px;    /* adjust as needed */
     font-size: 18px;     /* reduce font-size */
