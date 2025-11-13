@@ -93,15 +93,10 @@
 }
 @media screen and (max-width: 250px) and (min-width: 100px) {
     .me h4 span {
-    display: inline-block;
-    position: relative;
-    color: transparent;
-    font-family: courier new;
-    font-size: 19px;
-    letter-spacing: 2px;
-    -webkit-text-stroke: 0.7px aqua;
-    animation: display-text 16s linear infinite; /*creating animation property*/
-    animation-delay: calc(-4s * var(--i));
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+    
 }
 }
 @keyframes display-text {
