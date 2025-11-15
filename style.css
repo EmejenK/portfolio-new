@@ -192,11 +192,27 @@ span li a:hover {
     border-radius: 50%;
     box-shadow: 0px 0px 10px 10px rgba(26, 242, 250, 0.3);
     margin-top: 3rem;
+    animation: profile;
+    position: relative;
+    animation-iteration-count: 3;
+    animation-duration: 3s;
+    
 }
-.my-image:hover {
+@keyframes profile {
+        from{
+            top: 0;
+        }
+        to {
+            top: -75px;
+            box-shadow: 0px 0px 10px 10px rgba(247, 214, 67, 0.3);
+            
+        }
+    }
+
+/*.my-image:hover {
     transform: translateY(-5px);
     transition: 0.3s ease-in;
-}
+}*/
 .my-image img {
     width: 290px;
     height: 295px;
