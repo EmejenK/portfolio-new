@@ -5,6 +5,10 @@
     color: aliceblue;
     font-family: "poppins";
 }
+body {
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
 .header-section {
     display: flex;
     flex-wrap: wrap;
@@ -205,7 +209,6 @@ span li a:hover {
         to {
             top: -75px;
             box-shadow: 0px 0px 10px 10px rgba(247, 214, 67, 0.3);
-            
         }
     }
 
@@ -613,17 +616,25 @@ span li a:hover {
     gap: 5px;
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 2rem;
+    background-color: #111111;
+    padding: 10px;
+    border-radius: 5px;
+    
 }
 .details h2{
     padding-bottom: 10px;
+    background-color: transparent;
 }
 .details p {
     font-style: italic;
+    background-color: transparent;
+    font-size: 14px;
 }
 .details p i{
     padding: 0 10px;
     font-size: 20px;
     color: crimson;
+    background-color: transparent;
 }
 .details ul {
     padding-left: 1rem;
@@ -631,9 +642,11 @@ span li a:hover {
     gap: 10px;
     padding-top: 10px;
     cursor: pointer;
+    background-color: transparent;
 }
 .details ul a {
     list-style: none;
+    
 }
 .details ul a i {
     font-size: 20px;
@@ -646,6 +659,14 @@ form {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    overflow: hidden;
+    background-color: #111111;
+    padding: 10px;
+    border-radius: 5px;
+}
+form h3{
+    font-size: 17px;
+    background-color: transparent;
 }
 form input {
     border: none;
@@ -656,22 +677,27 @@ form input {
 }
 form textarea {
     border-radius: 2px;
+    background-color: transparent;
 }
-form .submit {
+form button {
     background-color: rgb(31, 238, 253);
-    border: 1px solid black;
+    border: none;
     padding: 5px;
-    text-align: left;
-    margin-right: 12rem;
-    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
     cursor: pointer;
     color: black;
+    margin: auto;
+    border-radius: 2px;
 }
+
 footer {
     margin-top: 1.5rem;
     box-shadow: 10px 0 10px  rgb(253, 88, 88);
     text-align: center;
     padding-bottom: 2rem;
+    margin-left: -3rem;
+    margin-right: -3rem;
 }
 footer h2 {
     padding-top: 10px;
