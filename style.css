@@ -337,6 +337,44 @@ span li a:hover {
     font-weight: 100;
 }
 
+
+/***************Education background******************/
+.education {
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.campus {
+    border: 0.1px solid rgb(41, 40, 40);
+    display: inline-block;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 5px;
+    background-color: #1f1e1e;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.campus:hover {
+ transform: scale(1.2);
+}
+.campus h4 {
+    background-color: transparent;
+    padding: 5px;
+}
+.campus h6 {
+    background-color: transparent;
+    padding: 5px;
+    color: rgb(41, 41, 255);
+    font-weight: 100;
+}
+.campus h5 {
+    background-color: transparent;
+    padding: 5px;
+    color: green;
+}
+
+
 /***************MY SKILLS********************/
 .technical {
     margin-left: 2rem;
