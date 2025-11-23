@@ -373,6 +373,35 @@ span li a:hover {
     padding: 5px;
     color: green;
 }
+.all-cert {
+    display: flex;
+    justify-content: space-around;
+}
+.cert{
+    padding-top: 1rem;
+    padding-bottom: 0.6rem;
+    padding-inline: 2rem;
+    margin: 1rem;
+    border-radius: 5px;
+    background-color: #1f1e1e;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.cert h3{
+    background-color: transparent;
+    padding: 3px;
+}
+.cert h4{
+    background-color: transparent;
+    font-weight: 200;
+    padding: 3px;
+}
+.cert h5{
+    background-color: transparent;
+    font-weight: 100;
+    padding: 3px;
+    color: green;
+}
 
 
 /***************MY SKILLS********************/
