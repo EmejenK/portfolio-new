@@ -75,8 +75,8 @@ body {
     border: 0px solid white;
     cursor: pointer;
     font-size: 17px;
-    background-color: rgb(241, 106, 106);
-    width: 5rem;
+    background-color: transparent;
+    
     
 }
 .open-bar i {
@@ -84,7 +84,7 @@ body {
 }
 @media screen and ( max-width: 750px){
  .open-bar {
-    /*display: none;*/
+    display: none;
  }
  .header-section ul{
     flex-direction: column;
@@ -95,6 +95,7 @@ body {
     justify-items: end;
     height: 100vh;
     top: -10px;
+    border-top-left-radius: 5px;
     right: -90px;
  }
  .header-section ul li {
@@ -104,7 +105,22 @@ body {
     background-color: transparent;
  }
 }
+.close {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: -23px;
+    cursor: pointer;
+}
 
+@media screen and ( min-width: 751px){
+ .close {
+    display: none;
+ }
+}
 
 
 
