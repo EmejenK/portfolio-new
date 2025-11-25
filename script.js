@@ -1,3 +1,21 @@
 function myFuction() {
-    document.getElementById("close").style.display = "none";
+    document.getElementById("navigation").style.marginRight = "0";
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
