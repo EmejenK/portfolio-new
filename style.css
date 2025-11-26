@@ -61,12 +61,19 @@ body {
 
 .unique-btn {
     display: inline-block;
+    /*transform: translate(2400%, -90%);*/
     position: absolute;
-    transform: translate(1400%, -90%);
+    right: 40px;
+    position: fixed;
+    margin-top: -135px;
+    z-index: 3;
 }
 .unique-btn button {
     border: none;
     cursor: pointer;
+}
+@media screen and ( max-width: 550px) and (min-width: 200px){
+  
 }
 .open-bar {
     margin-left: 10px;
@@ -77,37 +84,73 @@ body {
     border-radius: 50%;
     background-color: #5a5959;
 }
-
-
-/*****Setting side bar******/
-/*****Setting side bar******/
-/*****Setting side bar******/
 .open-bar {
     border: 0px solid white;
     cursor: pointer;
     font-size: 19px;
     background-color: transparent;
     position: absolute;
-   
 }
 .open-bar i {
     color: #949393;
 }
-@media screen and ( max-width: 750px){
- .open-bar {
-    /*display: none;*/
+
+
+/***Setting side bar******/
+/*****Setting side bar******/
+.side-nav {
+    height: 100%;
+    width: 0;
     position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #313131;
+    /*overflow-x: hidden;*/
+    transition: 0.5s;
+    padding-top: 50px;
+}
+.side-nav li a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+    transition: 0.3s;
+}
+.side-nav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+/*****Setting side bar****
+
+@media screen and ( min-width: 751px){
+ .close {
+    display: none;
  }
- .header-section ul{
+ .open-bar {
+  display: none;
+}
+
+}
+
+@media screen and ( max-width: 750px){
+  
+ .header-section .links-nav{
     flex-direction: column;
     gap: 10px;
     background-color: rgb(20, 20, 20);
     padding: 1.5rem;
     position: absolute;
     justify-items: end;
-    height: 100vh;
+    height: 92vh;
     top: -10px;
     border-top-left-radius: 5px;
+    border-bottom-left-radius: 15px;
     right: -90px;
  }
  .header-section ul li {
@@ -126,13 +169,9 @@ body {
     font-weight: bold;
     margin-left: -23px;
     cursor: pointer;
-}
+}****/
 
-@media screen and ( min-width: 751px){
- .close {
-    display: none;
- }
-}
+
 
 
 
